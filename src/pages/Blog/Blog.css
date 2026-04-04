@@ -1,0 +1,37 @@
+/* Importación de fuentes y símbolos */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Work+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+/* Configuración de Símbolos Material */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Estilos Globales */
+body {
+    background-color: #fcf9f8;
+    color: #1b1c1c;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Utilidades personalizadas */
+.no-rounded {
+    border-radius: 0 !important;
+}
+
+/* Selección de texto personalizada */
+::selection {
+    background-color: #fe9e6e;
+    /* secondary-container */
+    color: #77330b;
+    /* on-secondary-container */
+}
+
+/* Transición suave para el efecto de blanco y negro */
+img {
+    transition: all 0.7s ease-in-out;
+}

@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colores principales de The Rook Academy */
+  --color-primary: #005a5a;
+  --color-primary-container: #267373;
+  --color-secondary: #944921;
+  --color-secondary-container: #fe9e6e;
+
+  /* Colores de superficie y fondo */
+  --color-surface: #fcf9f8;
+  --color-background: #fcf9f8;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #3f4948;
+
+  /* Variantes de énfasis */
+  --color-primary-fixed: #a7efef;
+  --color-on-primary-fixed-variant: #004f50;
+  --color-surface-container-low: #f6f3f2;
+  --color-outline-variant: #bec9c8;
+
+  /* Tipografías */
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+/* Soporte para iconos */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* El degradado sutil del fondo */
+.hero-gradient {
+  background: linear-gradient(135deg, #fcf9f8 0%, #f6f3f2 100%);
+}

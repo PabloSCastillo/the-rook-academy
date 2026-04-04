@@ -1,0 +1,28 @@
+/* Importación de fuentes y símbolos */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Work+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Reseteo de bordes para inputs solicitado en el estilo original */
+input,
+textarea {
+    border-radius: 0px !important;
+}
+
+/* Suavizado de transiciones para imágenes */
+img {
+    transition: all 0.7s ease-in-out;
+}
+
+/* Personalización de la selección de texto */
+::selection {
+    background-color: #a7efef;
+    /* primary-fixed */
+    color: #002020;
+    /* on-primary-fixed */
+}
