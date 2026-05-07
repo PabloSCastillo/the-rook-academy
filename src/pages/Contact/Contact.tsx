@@ -12,14 +12,14 @@ const Contact: React.FC = () => {
 
             <main className="pt-20">
                 {/* Hero Section */}
-                <section className="relative h-[409px] flex items-center justify-center overflow-hidden bg-[#005a5a]">
+                <section className="relative h-[140px] flex items-center justify-center overflow-hidden bg-[#005a5a]">
                     <div className="absolute inset-0 z-0">
 
                         <div className="absolute inset-0 bg-gradient-to-br from-[#005a5a]/80 to-[#267373]/80"></div>
                     </div>
                     <div className="relative z-10 text-center px-6">
-                        <h1 className="font-extrabold text-5xl md:text-7xl text-white tracking-tighter mb-4">
-                            Contacto
+                        <h1 className="font-extrabold text-6xl md:text-5xl text-white tracking-tighter mb-4">
+                            CONTACTO
                         </h1>
                         <p className="font-['Work_Sans'] text-[#a7efef] uppercase tracking-[0.3em] text-sm">
                             El Horizonte Intelectual
@@ -34,8 +34,8 @@ const Contact: React.FC = () => {
                         {/* Left: Contact Form */}
                         <div className="space-y-12">
                             <div className="space-y-4">
-                                <h2 className="font-bold text-3xl text-[#005a5a] uppercase tracking-tight">Escríbenos</h2>
-                                <div className="h-1 w-20 bg-[#944921]"></div>
+                                <h2 className="font-bold text-3xl text-[#005a5a] uppercase tracking-tight">Escríbinos</h2>
+                                <div className="h-1 w-42 bg-[#944921]"></div>
                             </div>
                             <form className="space-y-8" onSubmit={handleSubmit}>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -115,11 +115,11 @@ const Contact: React.FC = () => {
                             {/* Visual Accent Card */}
                             <div className="bg-[#267373] p-10 relative overflow-hidden">
                                 <div className="relative z-10">
-                                    <h4 className="font-bold text-[#adf5f5] text-xl mb-4">¿Busca una evaluación de nivel?</h4>
+                                    <h4 className="font-bold text-[#ffffff] text-xl mb-4">¿Busca una evaluación de nivel?</h4>
                                     <p className="text-[#adf5f5]/80 mb-8 text-sm leading-relaxed">
                                         Ofrecemos pruebas de diagnóstico gratuitas para profesionales. Agende una sesión de 15 minutos con nuestros coordinadores académicos.
                                     </p>
-                                    <a className="inline-block border-2 border-[#adf5f5] text-[#adf5f5] px-6 py-3 font-semibold text-xs uppercase tracking-widest hover:bg-[#adf5f5] hover:text-[#267373] transition-all" href="#">
+                                    <a className="inline-block border-2 border-[#adf5f5] text-[#ffffff] px-6 py-3 font-semibold text-xs uppercase tracking-widest hover:bg-[#adf5f5] hover:text-[#267373] transition-all" href="#">
                                         Solicitar Prueba
                                     </a>
                                 </div>
@@ -135,7 +135,7 @@ const Contact: React.FC = () => {
                         <h2 className="font-['Work_Sans'] text-xs uppercase tracking-[0.5em] text-stone-400 mb-8">Nuestra Red Global</h2>
                     </div>
                     <div className="relative h-[500px] w-full grayscale contrast-[1.1] brightness-[1.05] hover:grayscale-0 transition-all duration-700">
-                        <img className="w-full h-full object-cover" src="disney 2.png" alt="Cordoba" />
+                        <img className="w-full h-full object-cover" src="trafalgar.jpeg" alt="Cordoba" />
                         <div className="absolute inset-0 bg-[#005a5a]/5 pointer-events-none"></div>
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
                             <div className="w-4 h-4 bg-[#005a5a] ring-8 ring-[#005a5a]/20"></div>

@@ -13,7 +13,7 @@ export const courses: Course[] = [
         title: "Inglés para Negocios",
         price: "$299",
         description: "Domine el lenguaje de los mercados internacionales. Comunicación ejecutiva, presentaciones de alto impacto y negociación estratégica.",
-        image: "character 4.png",
+        image: "reunion 1.jpeg",
         alt: "Modern corporate skyscraper architecture"
     },
     {
@@ -21,7 +21,7 @@ export const courses: Course[] = [
         title: "Preparación de Exámenes",
         price: "$350",
         description: "Estrategias avanzadas para certificaciones internacionales (IELTS, TOEFL, Cambridge). Resultados garantizados por expertos examinadores.",
-        image: "character 5.png",
+        image: "books 1.jpeg",
         alt: "Person writing notes in a minimal desk environment"
     },
     // ... añade el resto de los cursos aquí

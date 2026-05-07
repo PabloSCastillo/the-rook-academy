@@ -20,7 +20,7 @@ const CourseCTA = () => {
                 </div>
                 <div className="lg:w-1/2 relative">
                     <div className="absolute -top-12 -left-12 w-64 h-64 bg-primary/10 -z-10"></div>
-                    <img alt="Asesoría" src="/assets/cta-advisor.jpg" className="w-full h-[500px] object-cover shadow-2xl" />
+                    <img src="biblioteca 1.jpeg" className="w-full h-[500px] object-cover shadow-2xl" />
                 </div>
             </div>
             <div className="absolute bottom-0 right-0 w-1/4 h-1/2 bg-surface-container-highest/50 translate-x-1/4 translate-y-1/4 -rotate-12"></div>

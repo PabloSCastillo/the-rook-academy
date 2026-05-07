@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar: React.FC = () => {
@@ -10,31 +10,35 @@ const Navbar: React.FC = () => {
     const closeMenu = () => setIsOpen(false);
 
     return (
-        <nav className="fixed top-0 w-full z-50 bg-[#FCF9F8] dark:bg-slate-900 border-b border-gray-200 shadow-sm">
+        <nav className="fixed top-0 w-full z-50 bg-[#FCF9F8] dark:bg-slate-900">
             <div className="flex justify-between items-center px-4 md:px-12 py-4 max-w-[1440px] mx-auto">
 
-                {/* LADO IZQUIERDO: Logo */}
-                <div className="flex items-center gap-3">
-                    <img
-                        alt="The Rook Academy Logo"
-                        className="h-10 w-10 object-contain"
-                        src="./logo.jpeg"
-                    />
-                    <span className="font-['Manrope'] font-black text-[#005A5A] dark:text-[#267373] text-xl tracking-tighter uppercase">
-                        The Rook <small className="text-[#944921] text-sm">Academy</small>
-                    </span>
-                </div>
+                <Link to="/">
+                    {/* LADO IZQUIERDO: Logo */}
+                    <div className="flex items-center gap-0">
+                        <img
+                            alt="The Rook Academy Logo"
+                            className="h-10 w-10 object-contain"
+                            src="./logo 2k.jpeg"
+                        />
+                        <span className="font-['Manrope'] font-black text-[#005A5A] dark:text-[#267373] text-xl tracking-tighter uppercase">
+                            The Rook <small className="text-[#F15A24] text-xs">English Lab</small>
+                        </span>
+                    </div>
+                </Link>
 
                 {/* CENTRO: Navegación Desktop (Oculto en móvil) */}
-                <div className="hidden md:flex items-center space-x-10">
+                {/* CENTRO: Navegación Desktop */}
+                <div className="hidden md:flex items-center space-x-4"> {/* Bajamos de space-x-10 a 4 porque el padding de los links ya suma espacio */}
                     <NavLinks handleAction={closeMenu} />
                 </div>
 
                 {/* LADO DERECHO: Botón y Hamburguesa */}
                 <div className="flex items-center gap-4">
-                    <button className="hidden sm:block bg-[#004d4d] text-white px-6 py-3 font-headline font-bold text-[10px] uppercase tracking-[0.2em] hover:bg-[#005A5A] transition-all duration-300">
-                        Consulta Ahora
-                    </button>
+                    <Link to="/contacto">
+                        <button className="hidden sm:block bg-[#004d4d] text-white px-6 py-3 font-headline font-bold text-[10px] uppercase tracking-[0.2em] hover:bg-[#005A5A] transition-all duration-300">
+                            Consulta Ahora
+                        </button></Link>
 
                     {/* Botón Hamburguesa */}
                     <button
@@ -82,14 +86,21 @@ const NavLinks: React.FC<NavLinksProps> = ({ handleAction }) => {
     return (
         <>
             {links.map((link) => (
-                <Link
+                <NavLink
                     key={link.name}
                     to={link.path}
-                    onClick={handleAction} // Cierra el menú al hacer click
-                    className="font-headline font-bold uppercase tracking-widest text-xs text-gray-500 hover:text-[#005A5A] transition-colors"
+                    onClick={handleAction}
+                    className={({ isActive }) => `
+    font-headline font-bold uppercase tracking-[0.15em] text-[11px] md:text-xs 
+    px-4 py-2 rounded-full transition-all duration-300 border-1
+    ${isActive
+                            ? 'bg-transparent text-[#005A5A] shadow-xs'
+                            : 'border-transparent text-gray-500 hover:text-[#005A5A] '
+                        }
+`}
                 >
                     {link.name}
-                </Link>
+                </NavLink>
             ))}
         </>
     );
